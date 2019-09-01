@@ -8,10 +8,6 @@ class Author
     @post = []
   end
 
-  #def posts
-    #@posts
-  #end
-
   def posts
    Post.all.select {|word| word.author == self}
  end
